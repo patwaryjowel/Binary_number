@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+    
+    <style>
+        body {
+          font-family: sans-serif;
+        }
+        
+        #result {
+          visibility: hidden;
+        }
+        #app {
+            border: 1px solid #ddd;
+            max-width: 400px;
+            margin: auto;
+            margin-top: 100px;
+            padding: 30px;
+            text-align: center;
+            background: #f1f1f1;
+        }
+        .input-box-one input {
+            border: none;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+            background: transparent;
+        }
+        .input-box-one input:focus {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #333;
+        }
+        .input-box-two {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px
+        }
+        #submit{
+            background: white;
+            border: 1px solid #ddd;
+            padding: 5px 20px;
+            transition: all 0.3s ease-in-out;
+        }
+        #submit:hover{
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+    </style>
+
+  <body>
+    <div id="app">
+      <div class="input-box-one">
+        <input id="number" type="number" placeholder="Input Type Hear" />
+      </div>
+      <div class="input-box-two">
+        <h3 class="result" id="result">120</h3>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
